@@ -425,7 +425,7 @@ static ErrCode get_work_feedrate(event_param_t& event) {
   uint16_t *fr = (uint16_t *)&event.data[1];
   *fr = motion_control.get_feedrate();
   event.length = 3;
-  LOG_V("SC get feedrate:%d\n", *fr);
+  LOG_I("SC get feedrate:%d\n", *fr);
   return send_event(event);
 }
 

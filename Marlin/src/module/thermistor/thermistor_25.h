@@ -25,7 +25,7 @@
 
 // #undef OV_SCALE
 // #define OV_SCALE(N) (float((N) * 5) / 3.3f)
-#define SCALE_HARDWARE_ERROR (0)
+#define SCALE_HARDWARE_ERROR (25)
 constexpr temp_entry_t temptable_25[] PROGMEM = {
   { OV(628  - SCALE_HARDWARE_ERROR), -30 },
   { OV(628  - SCALE_HARDWARE_ERROR), -27 },
